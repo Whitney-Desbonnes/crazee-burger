@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-export default function LoginPage() {
-    
+export default function LoginForm() {
     // state (état, données)
     const [inputValue, setInputValue] = useState('');
 
@@ -17,13 +16,13 @@ export default function LoginPage() {
   }
 
   // render / rendu
-  return <>
-    <h1>Bienvenue chez nous</h1>
-    <br/>
-    <h2>Connectez-vous</h2>
+  return (
     <form action="submit" onSubmit={handleSubmit}>
+      <h1>Bienvenue chez nous</h1>
+      <br/>
+      <h2>Connectez-vous</h2>
       <input type="text" onChange={handleChange} value={inputValue} placeholder="Entrez votre prénom" required/>
       <input type="submit" value="Accedez à votre espace" />
     </form>
-  </>
+  )
 }
