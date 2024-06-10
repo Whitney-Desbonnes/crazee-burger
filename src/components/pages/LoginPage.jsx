@@ -18,12 +18,12 @@ export default function LoginPage() {
 
   // render / rendu
   return <>
-      <h1>Bienvenue chez nous</h1>
-      <br>
-      <h2>Connectez-vous</h2>
-      <form action="submit" onSubmit={handleSubmit}>
-        <input type="text" onChange={handleChange} value={inputValue} placeholder="Entrez votre prénom" required/>
-        <input type="submit" value="Accedez à votre espace" />
-      </form>
-    </>
+    <h1>Bienvenue chez nous</h1>
+    <br/>
+    <h2>Connectez-vous</h2>
+    <form action="submit" onSubmit={handleSubmit}>
+      <input type="text" onChange={handleChange} value={inputValue} placeholder="Entrez votre prénom" required/>
+      <input type="submit" value="Accedez à votre espace" />
+    </form>
+  </>
 }
