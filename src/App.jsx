@@ -1,6 +1,6 @@
 import LoginPage from "./components/pages/login/LoginPage";
-import OrderPage from "./components/pages/login/OrderPage";
-import ErrorPage from "./components/pages/login/ErrorPage";
+import OrderPage from "./components/pages/order/OrderPage";
+import ErrorPage from "./components/pages/error/ErrorPage";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       errorElement: <ErrorPage/>,
     },
     {
-      path:"/order/:inputValue",
+      path:"/order/:username",
       element: <OrderPage/>
     },
   ])
