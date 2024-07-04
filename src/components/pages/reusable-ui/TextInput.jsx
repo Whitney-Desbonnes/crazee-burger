@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import theme from "../../../theme/index";
 
-export default function Input({ value, onChange, Icon, ...extraProps }) {
+export default function TextInput({ value, onChange, Icon, ...extraProps }) {
 
   return (
-    <InputStyled className="input-container">
+    <TextInputStyled className="input-container">
         { Icon && Icon }
         <input 
             value={value} 
@@ -12,11 +12,11 @@ export default function Input({ value, onChange, Icon, ...extraProps }) {
             type="text" 
             {...extraProps}
         />
-    </InputStyled>
+    </TextInputStyled>
   )
 }
 
-const InputStyled = styled.div`
+const TextInputStyled = styled.div`
     border-radius: ${theme.borderRadius.round};
     padding: 18px 24px;
     margin-top: 18px;
