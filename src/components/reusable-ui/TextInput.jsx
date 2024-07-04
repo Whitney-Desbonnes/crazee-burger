@@ -29,11 +29,6 @@ const TextInputStyled = styled.div`
     align-items: center;
     gap: 13px;
 
-    svg {
-      color:${theme.colors.greyBlue};
-      font-size: ${theme.fonts.P0};
-    }
-
     input {
       font-family: Arial, Helvetica, sans-serif;
       color: #D3D3D3;

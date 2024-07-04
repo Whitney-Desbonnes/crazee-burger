@@ -5,6 +5,7 @@ import theme from "../../../theme/index";
 import { BsPersonCircle } from "react-icons/bs";
 import { IoChevronForward } from "react-icons/io5";
 import TextInput from "../../reusable-ui/TextInput";
+import PrimaryButton from "../../reusable-ui/PrimaryButton";
 
 
 export default function LoginForm() {
@@ -37,12 +38,12 @@ export default function LoginForm() {
           onChange={handleChange} 
           placeholder="Entrez votre prénom" 
           required
-          Icon={<BsPersonCircle/>}
+          Icon={<BsPersonCircle className="input-text-icon"/>}
         />
-        <button>
-          <span>Accéder à mon espace</span>
-          <IoChevronForward />
-        </button>
+        <PrimaryButton
+        Icon={<IoChevronForward/>}
+        label="Accéder à mon espace"
+        />
       </div>
     </LoginFormStyled>
   )
@@ -79,33 +80,8 @@ const LoginFormStyled = styled.form`
     font-size: ${theme.fonts.P4};
   }
 
-  button {
-    border-radius: ${theme.borderRadius.round};
-    padding: 18px 24px;
-    margin-top: 18px;
-    width: 100%;
-    max-width: 400px;
-    font-size: ${theme.fonts.P0};
-  }
-
-  button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  button,
-  button:focus {
-    background-color: ${theme.colors.primary_burger};
-    color: ${theme.colors.white};
-    border: 1px solid ${theme.colors.primary_burger};
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.primary_burger};
+  .input-text-icon {
+    color:${theme.colors.greyBlue};
+      font-size: ${theme.fonts.P0};
   }
 `
