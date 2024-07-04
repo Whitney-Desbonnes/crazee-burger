@@ -1,6 +1,6 @@
 import LoginForm from "./LoginForm";
 import styled from "styled-components";
-import Logo from "../reusable-ui/Logo";
+import Logo from "../../reusable-ui/Logo";
 import theme from "../../../theme/index";
 
 export default function LoginPage() {
