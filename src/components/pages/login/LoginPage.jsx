@@ -21,7 +21,7 @@ const LoginPageStyled = styled.div`
     color: ${theme.colors.white};
     height: 100vh;
     padding: 0 20px;
-    background: url("../../../../public/images/burger-background.jpg") rgba(0,0,0,0.7);
+    background: url("/images/burger-background.jpg") rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

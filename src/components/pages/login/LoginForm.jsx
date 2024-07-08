@@ -64,11 +64,12 @@ const LoginFormStyled = styled.form`
   
   h1 {
     font-size: ${theme.fonts.P5};
+    font-size: ${theme.colors.white};
   }
 
 
   hr {
-    background-color: #F56A2C;
+    background-color: ${theme.colors.loginLine};
     height: 3px;
     width: 100%;
     max-width: 400px;
@@ -78,10 +79,11 @@ const LoginFormStyled = styled.form`
 
   h2 {
     font-size: ${theme.fonts.P4};
+    font-size: ${theme.colors.white};
   }
 
   .input-text-icon {
-    color:${theme.colors.greyBlue};
-      font-size: ${theme.fonts.P0};
+    color:${theme.colors.greySemiDark};
+    font-size: ${theme.fonts.P0};
   }
 `

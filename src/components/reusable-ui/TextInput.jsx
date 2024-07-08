@@ -23,7 +23,7 @@ const TextInputStyled = styled.div`
     width: 100%;
     max-width: 400px;
     font-size: ${theme.fonts.P0};
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.background_white};
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,9 +31,14 @@ const TextInputStyled = styled.div`
 
     input {
       font-family: Arial, Helvetica, sans-serif;
-      color: #D3D3D3;
-      width: 100%;
+      color: ${theme.colors.dark};
+      flex: 1;
       border: none;
+      background-color: ${theme.colors.background_white};
+
+      &::placeholder {
+        color: ${theme.colors.greyExtraLight};
+      }
     }
 
     input:focus {
