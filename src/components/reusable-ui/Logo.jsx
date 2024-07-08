@@ -13,17 +13,20 @@ export default function Logo() {
 }
 
 const LogoStyled = styled.div`
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    color: ${theme.colors.primary};
-    font-size: ${theme.fonts.P6};
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    text-transform: uppercase;
     margin-bottom: 40px;
+    font-size: ${theme.fonts.P6};
+
+    h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: ${theme.weights.bold};
+    font-style: normal;
+    text-align: center;
+    color: ${theme.colors.primary};
+    text-transform: uppercase;
+    }
 
     img {
         width: 100%;
