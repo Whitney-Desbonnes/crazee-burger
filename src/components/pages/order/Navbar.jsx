@@ -30,17 +30,10 @@ const NavStyled = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
     border-radius: ${theme.borderRadius.extraRound} ${theme.borderRadius.extraRound} 0 0;
     background-color: #ffff;
-
-    .logo {
-        width: 100%;
-        max-width: 240px;
-        font-size: ${theme.fonts.P3};
-        margin-bottom: 0;
-        cursor: pointer;
-    }
+    height: 10vh;
 
     .login-logout {
         display: flex;
@@ -57,6 +50,7 @@ const NavStyled = styled.nav`
             .user-name {
                 color: ${theme.colors.primary};
                 font-weight: 700;
+                text-transform: capitalize ;
             }
         } 
 
