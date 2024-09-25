@@ -3,11 +3,11 @@ import theme from "../../../theme";
 import { BsPersonCircle } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
-export default function Profil({ username }) {
+export default function Profile({ username }) {
 
     // render / affichage
     return (
-        <ProfilStyled>
+        <ProfileStyled>
             <div className="info">
                 <p>
                 Hey, <b>{username}</b>
@@ -21,11 +21,11 @@ export default function Profil({ username }) {
             <div className="picture">
                 <BsPersonCircle />
             </div>
-        </ProfilStyled>
+        </ProfileStyled>
     )
 }
 
-export const ProfilStyled = styled.div`
+export const ProfileStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;

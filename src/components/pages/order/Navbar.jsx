@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Logo from "../../reusable-ui/Logo";
 import theme from "../../../theme/index";
-import Profil from './Profil';
+import Profile from './Profile';
 
 export default function Navbar({ username }) {
     const reloadPage = () => {
@@ -12,7 +12,7 @@ export default function Navbar({ username }) {
     return (
         <NavStyled>
             <Logo onClick={reloadPage} />
-            <Profil username={username} />
+            <Profile username={username} />
         </NavStyled>
     )
 }
