@@ -6,7 +6,7 @@ import theme from "../../../theme/index";
 export default function LoginPage() {
   return (
     <LoginPageStyled>
-          <Logo/>
+          <Logo className={"logo-login-page"}/>
           <LoginForm/>
     </LoginPageStyled>
 
@@ -14,18 +14,22 @@ export default function LoginPage() {
 }
 
 const LoginPageStyled = styled.div`
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: ${theme.colors.white};
-    height: 100vh;
     padding: 0 20px;
     background: url("/images/burger-background.jpg") rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: darken;
+
+    .logo-login-page {
+      transform: translateY(-100%) scale(2.5);
+    }
 
     /*
     &::before {

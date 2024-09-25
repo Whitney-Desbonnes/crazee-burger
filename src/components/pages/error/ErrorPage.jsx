@@ -4,7 +4,7 @@ export default function ErrorPage() {
     // state (état, données)
     const navigate = useNavigate();
 
-    // comportenemts
+    // comportements
     const handleClick = () => {
         navigate("/");
     }
